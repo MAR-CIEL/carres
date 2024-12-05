@@ -35,3 +35,24 @@ void CCarre::affichage()
 	cout << "les coordonees de son sommet superieur gauche sont : " << sx << " et " << sy << endl;
 	cout << "son cote droit est de : " << cote << endl;
 }
+
+//Déclaration d'un fonction qui va retourner la valeur des abscisses
+int CCarre::Getsx()
+{
+	//Return : fonction qui va retourner une valeur 
+	return sx;
+}
+
+//Déclaration d'un fonction qui va retourner la valeur des ordonnées
+int CCarre::Getsy()
+{
+	//Return : fonction qui va retourner une valeur 
+	return sy;
+}
+
+//Déclaration d'un fonction qui va retourner la valeur du côté droit du carré
+int CCarre::GetCote()
+{
+	//Return : fonction qui va retourner une valeur 
+	return cote;
+}

@@ -18,4 +18,7 @@ int main()
 	c1.setsy(6);
 	c1.setcote(9);
 	c1.affichage();
+	//Utilisation de la fonction cout afin de pouvoir afficher les résultats
+	cout << "les coordonees de son sommet superieur gauche sont : " << c1.Getsx() << " et " << c1.GetCote() << endl;
+	cout << "son cote droit est de : " << c1.GetCote() << endl;
 }

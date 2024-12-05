@@ -29,4 +29,13 @@ public:
 
 	//Déclaration de la fonction pour afficher le résultat
 	void affichage();
+
+	//Déclaration d'un fonction qui va retourner sx
+	int Getsx();
+
+	//Déclaration d'un fonction qui va retourner sy
+	int Getsy();
+
+	//Déclaration d'un fonction qui va retourner cote
+	int GetCote();
 };
