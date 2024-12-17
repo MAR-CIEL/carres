@@ -13,7 +13,7 @@ class CCarre
 //Déclaration des variable en privé afin de ne pas pouvoir les modifier directement
 private:
 	//Déclaration des variable 
-	int sx, sy; 
+	int sx, sy, dx, dy; 
 	unsigned int cote;
 //Déclaration de tous ce qui sera public et donc accessible a l'utilisateur 
 //notamment des fonction et autre 
@@ -47,4 +47,6 @@ public:
 	//   - saut : nombre de pixels de déplacement du carré 
 	// Sortie : Aucune 
 	void Deplacer(char direction, int saut);
+
+	void Deplacer(int dx, int dy);
 };

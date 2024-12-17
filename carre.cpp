@@ -12,6 +12,7 @@ void CCarre::setsx(int sx1)
 {
 	//Affiliation de la varible privé par la variable d'entrée de la fonction 
 	sx = sx1;
+	dx = sx1;
 }
 
 //Déclaration de la fonction pour les ordonnes
@@ -19,6 +20,7 @@ void CCarre::setsy(int sy1)
 {
 	//Affiliation de la varible privé par la variable d'entrée de la fonction
 	sy = sy1;
+	dy = sy1;
 }
 
 //Déclaration de la fonction pour le côté droit du carré
@@ -32,7 +34,7 @@ void CCarre::setcote(int cote1)
 void CCarre::affichage()
 {
 	//Utilisation de la fonction cout afin de pouvoir afficher les résultats
-	cout << "les coordonees de son sommet superieur gauche sont : " << sx << " et " << sy << endl;
+	cout << "les coordonees de son sommet superieur gauche sont : " << sx <<" "<<dx<< " et " << sy<<" "<<dy << endl;
 	cout << "son cote droit est de : " << cote << endl;
 }
 
@@ -89,3 +91,26 @@ void CCarre::Deplacer(char direction, int saut)
 
 	}*/
 }
+
+void CCarre::Deplacer(int dx, int dy)
+{
+	switch (dx)
+	{
+	case 1:
+		sy = sy - dy;
+		break;
+	case 2:
+		sy = sy + dy;
+		break;
+	case 3:
+		sx = sx + dx;
+		break;
+	case 4:
+		sx = sx - dx;
+		break;
+	default:
+		cout << "saisi invalide" << endl;
+	}
+}
+
+
