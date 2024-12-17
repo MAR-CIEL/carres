@@ -56,3 +56,36 @@ int CCarre::GetCote()
 	//Return : fonction qui va retourner une valeur 
 	return cote;
 }
+
+void CCarre::Deplacer(char direction, int saut)
+{
+	switch (direction)
+	{
+	case 'n':
+		sy = sy - saut;
+		break;
+	case 's':
+		sy = sy + saut;
+		break;
+	case 'e':
+		sx = sx + saut;
+		break;
+	case 'o':
+		sx = sx - saut;
+		break;
+	default:
+		cout << "saisi invalide" << endl;
+	}
+	/*if (direction == 'n')
+	{
+		sy = sy - saut;
+	}
+	else if (direction=='s')
+	{
+		sy = sy + saut;
+	}
+	else if ()
+	{
+
+	}*/
+}
